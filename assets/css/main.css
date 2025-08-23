@@ -1269,7 +1269,6 @@ section,
   height: 100%;
   padding: 40px 30px;
   border-radius: 10px;
-  background-color: ;
 }
 
 .features-cards .feature-box i {
@@ -1981,11 +1980,4 @@ section,
   font-size: 20px;
   margin-right: 8px;
   color: var(--accent-color);
-}
-
-/*--------------------------------------------------------------
-# Starter Section Section
---------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
 }
