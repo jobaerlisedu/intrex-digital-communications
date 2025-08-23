@@ -1,42 +1,49 @@
 /* Fonts */
 :root {
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Nunito",  sans-serif;
-  --nav-font: "Inter",  sans-serif;
+  --heading-font: "Raleway",  sans-serif;
+  --nav-font: "Ubuntu",  sans-serif;
 }
 
-/* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
+/* Global Colors*/
 :root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #212529; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #2d465e; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #0d83fd; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  --background-color: #ffffff;
+  --default-color: #444444;
+  --heading-color: #5f687b;
+  --accent-color: #252525;
+  --surface-color: #ffffff;
+  --contrast-color: #ffffff;
 }
 
-/* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
+/* Nav Menu Colors*/
 :root {
-  --nav-color: #212529;  /* The default color of the main navmenu links */
-  --nav-hover-color: #0d83fd; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #212529; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #0d83fd; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-color: #5f687b;
+  --nav-hover-color: #060606;
+  --nav-mobile-background-color: #ffffff;
+  --nav-dropdown-background-color: #ffffff;
+  --nav-dropdown-color: #5f687b;
+  --nav-dropdown-hover-color: #060606;
 }
 
-/* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
-
+/* Color Presets*/
 .light-background {
-  --background-color: #f3f9ff;
+  --background-color: #f9f9f9;
   --surface-color: #ffffff;
 }
 
 .dark-background {
-  --background-color: #0d83fd;
+  --background-color: #060606;
   --default-color: #ffffff;
   --heading-color: #ffffff;
-  --surface-color: #409dfd;
+  --surface-color: #252525;
+  --contrast-color: #ffffff;
+}
+
+.accent-background {
+  --background-color: #252525;
+  --default-color: #ffffff;
+  --heading-color: #ffffff;
+  --surface-color: #14eb83;
   --contrast-color: #ffffff;
 }
 
@@ -1262,6 +1269,7 @@ section,
   height: 100%;
   padding: 40px 30px;
   border-radius: 10px;
+  background-color: ;
 }
 
 .features-cards .feature-box i {
@@ -1276,43 +1284,45 @@ section,
   font-size: 20px;
   font-weight: 700;
   margin: 0 0 10px 0;
+  color: var(--background-color);
 }
 
 .features-cards .feature-box p {
   font-size: 15px;
   margin-bottom: 0;
+  color: var(--background-color);
 }
 
 .features-cards .feature-box.orange {
-  background-color: #fff3e2;
+  background-color: var(--accent-color);
 }
 
 .features-cards .feature-box.orange i {
-  color: #edb86e;
+  color: var(--background-color);
 }
 
 .features-cards .feature-box.blue {
-  background-color: #deedfd;
+  background-color: var(--accent-color);
 }
 
 .features-cards .feature-box.blue i {
-  color: #20a5f8;
+  color: var(--background-color);
 }
 
 .features-cards .feature-box.green {
-  background-color: #d5f1e4;
+  background-color: var(--accent-color);
 }
 
 .features-cards .feature-box.green i {
-  color: #48c88a;
+  color: var(--background-color);
 }
 
 .features-cards .feature-box.red {
-  background-color: #fdeded;
+  background-color: var(--accent-color);
 }
 
 .features-cards .feature-box.red i {
-  color: #f28484;
+  color: var(--background-color);
 }
 
 /*--------------------------------------------------------------
